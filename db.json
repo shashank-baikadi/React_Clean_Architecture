@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "bac5",
+      "name": "shashank",
+      "email": "shashank@gmail.com",
+      "phoneNumber": "8732199992"
+    },
+    {
+      "id": "23cc",
+      "name": "shashank",
+      "email": "shashank@gmail.com",
+      "phoneNumber": "8732199992"
+    }
+  ]
+}
