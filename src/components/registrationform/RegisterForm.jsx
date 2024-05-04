@@ -5,7 +5,8 @@ const RegisterForm = () => {
   const { name, setName, email, setEmail, file, setFile, handleSubmit } = useRegisterForm();
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} >
+        <div className='bg-blue-50'>
       <input
         type="text"
         placeholder="Enter your name"
@@ -22,6 +23,7 @@ const RegisterForm = () => {
       />
       <input type="file" className="border-2 border-black" onChange={(e) => setFile(e.target.files[0])} />
       <button type="submit">Register</button>
+      </div>
     </form>
   );
 };
