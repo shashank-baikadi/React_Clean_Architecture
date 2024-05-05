@@ -7,7 +7,7 @@ export const routes = [
     {
         path: '/',
         component: registerform,
-        exact: true,
+        exact: false,
       },
   {
     path: '/userform',
