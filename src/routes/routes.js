@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 const userform = lazy(() => import('../components/userform/UserForm.jsx'));
 const registerform = lazy(() => import('../components/registrationform/RegisterForm.jsx'));
-
+const  RequestForLoan= lazy(() => import('../pages/Loans/RequestForLoan.jsx'));
 
 export const routes = [
     {
@@ -12,6 +12,11 @@ export const routes = [
   {
     path: '/userform',
     component: userform,
+    exact: true,
+  },
+  {
+    path: '/loan',
+    component: RequestForLoan,
     exact: true,
   },
 

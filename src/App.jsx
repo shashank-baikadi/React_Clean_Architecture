@@ -30,6 +30,7 @@ const App = () => (
 
   <Router>
     <RouterConfig />
+
   </Router>
 );
 
