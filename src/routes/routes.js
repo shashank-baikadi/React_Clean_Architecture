@@ -1,6 +1,6 @@
 import { lazy } from 'react';
-const userform = lazy(() => import('../userform/UserForm'));
-const registerform = lazy(() => import('../registrationform/RegisterForm'));
+const userform = lazy(() => import('../components/userform/UserForm.jsx'));
+const registerform = lazy(() => import('../components/registrationform/RegisterForm.jsx'));
 
 
 export const routes = [

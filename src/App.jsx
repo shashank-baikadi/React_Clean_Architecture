@@ -22,7 +22,8 @@
 
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import RouterConfig from './components/routing/Router';
+// import RouterConfig from './components/routing/Router';
+import RouterConfig from './routes/Router';
 
 const App = () => (
 
