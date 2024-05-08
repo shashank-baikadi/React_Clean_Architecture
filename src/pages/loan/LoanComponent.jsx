@@ -1,59 +1,36 @@
-// import React from 'react';
-// import { useLoanForm } from './LoanForm.logic';
-
-// const   LoanComponent = () => {
-//   const { data, setData, handleSubmit } = useLoanForm();
-
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       {/* Assuming config is available in this scope */}
-//       {config.map((field, index) => {
-//         return (
-//           <input
-//             key={index}
-//             type={field.type}
-//             placeholder={`Enter your ${field.name}`}
-//             value={data[field.name] || ''}
-//             onChange={(e) => setData({ ...data, [field.name]: e.target.value })}
-//           />
-//         );
-//       })}
-//       <button type="submit">Submit</button>
-//     </form>
-//   );
-// };
-
-// export default LoanComponent;
-
-
 import React from 'react';
 import { useLoanForm } from './LoanForm.logic';
+import LoanStyles from './LoanStyles'; // adjust the path as needed
+
+
 
 const LoanComponent = ({ config }) => {
   const { data, setData, handleSubmit } = useLoanForm();
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={LoanStyles.standard}>
       {config.map((field, index) => {
         if (field.type === 'text') {
           return (
-            <div key={index}>
-              <label>{field.label}</label>
+            <div key={index} className={LoanStyles.standard}>
+              <label className={LoanStyles.standard.label}>{field.label}</label>
               <input
                 type="text"
                 placeholder={field.placeholder}
                 value={data[field.name] || ''}
                 onChange={(e) => setData({ ...data, [field.name]: e.target.value })}
+                className={LoanStyles.standard.input}
               />
             </div>
           );
         } else if (field.type === 'options') {
           return (
-            <div key={index}>
-              <label>{field.label}</label>
+            <div key={index} className={LoanStyles.standard}>
+              <label className={LoanStyles.standard.label}>{field.label}</label>
               <select
                 value={data[field.name] || ''}
                 onChange={(e) => setData({ ...data, [field.name]: e.target.value })}
+                className={LoanStyles.standard.input}
               >
                 {field.options.map((option, i) => (
                   <option key={i} value={option.value}>
@@ -66,7 +43,7 @@ const LoanComponent = ({ config }) => {
         }
         return null;
       })}
-      <button type="submit">Submit</button>
+      <button type="submit" className='mt-3 bg-blue-50 '>Submit</button>
     </form>
   );
 };

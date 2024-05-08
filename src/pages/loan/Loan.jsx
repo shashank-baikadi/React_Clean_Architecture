@@ -1,10 +1,11 @@
 import React from 'react'
-import RequestForLoanComponent from './RequestForLoanComponent'; // adjust the path as needed
-import { RequestForLoanData } from './RequestForLoanData'; // adjust the path as needed
-const Loan = () => {
+import LoanComponent from './LoanComponent'; // adjust the path as needed
+import {LoanData } from './LoanData'; // adjust the path as needed
+const Loan = ({ component: Component = LoanComponent, data = LoanData }) => {
   return (
     <div>
-         <RequestForLoanComponent config={RequestForLoanData}/>
+         {/* <LoanComponent config={LoanData}/> */}
+         <Component config={data}/>
     </div>
   )
 }
