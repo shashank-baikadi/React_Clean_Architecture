@@ -2,8 +2,6 @@ import React from 'react';
 import { useLoanForm } from './LoanForm.logic';
 import LoanStyles from './LoanStyles'; // adjust the path as needed
 
-
-
 const LoanComponent = ({ config }) => {
   const { data, setData, handleSubmit } = useLoanForm();
 
