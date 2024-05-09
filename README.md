@@ -31,3 +31,19 @@ module.exports = {
   };
 
   ## shashnk
+
+  {
+  "users": [
+    {
+      "id": "4500",
+      "name": "shashank",
+      "email": "baikadi.shashank@infokalash.com",
+      "phoneNumber": "8732199992"
+    },
+    {
+      "id": "f601",
+      "s": "vehicle",
+      "amount": "100"
+    }
+  ]
+}

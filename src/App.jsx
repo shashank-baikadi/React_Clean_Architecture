@@ -25,12 +25,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // import RouterConfig from './components/routing/Router';
 import RouterConfig from './routes/Router';
 
+
 const App = () => (
 
 
   <Router>
     <RouterConfig />
-
   </Router>
 );
 

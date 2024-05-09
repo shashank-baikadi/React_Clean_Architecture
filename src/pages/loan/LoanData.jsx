@@ -23,12 +23,6 @@ export const LoanData= [
         "textcss": "standard",
         // "icon": <CiCalendar className="text-gray-500" />,
       },
-
-
-
-
-
-
       {
         "name":"typeofloan",
         "label": "Installment period",
@@ -84,6 +78,5 @@ export const LoanData= [
         "textcss": "standard",
         // "icon": <CiCalendar className="text-gray-500" />,
       },
-
     ];
 

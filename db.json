@@ -1,15 +1,47 @@
 {
-  "users": [
-    {
-      "id": "4500",
-      "name": "shashank",
-      "email": "baikadi.shashank@infokalash.com",
-      "phoneNumber": "8732199992"
-    },
-    {
-      "id": "f601",
-      "s": "vehicle",
-      "amount": "100"
-    }
-  ]
+  "GET": [
+
+      {
+        "name": "",
+        "label": "Text Label",
+        "type": "text",
+        "placeholder": "Enter Text",
+        "textcss": "standard"
+      },
+
+      {
+        "name": "",
+        "label": "Option Label",
+        "type": "options",
+        "options": [
+          { "name": "1", "value": "1" },
+          { "name": "2", "value": "2" },
+          { "name": "3", "value": "3" }
+        ],
+        "icon": "CiCalendar"
+      }
+     
+    ],
+
+
+
+
+    
+  
+    "POST": [
+      {
+        "id": "4500",
+        "name": "shashank",
+        "email": "baikadi.shashank@infokalash.com",
+        "phoneNumber": "8732199992"
+      },
+      {
+        "id": "f601",
+        "s": "vehicle",
+        "amount": "100"
+      }
+    ]
+ 
+
 }
+
