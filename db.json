@@ -5,14 +5,15 @@
         "name": "",
         "label": "Text Label",
         "type": "text",
-        "placeholder": "Enter Text",
-        "textcss": "standard"
+        "placeholder": "Enter Text"
+     
       },
 
       {
         "name": "",
         "label": "Option Label",
         "type": "options",
+        "placeholder": "Enter Text",
         "options": [
           { "name": "1", "value": "1" },
           { "name": "2", "value": "2" },
