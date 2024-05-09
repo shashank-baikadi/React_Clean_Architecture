@@ -12,7 +12,7 @@ const LoanGetComponent = () => {
     <div>
       {data.map((field, index) => (
         <div key={index}>
-          <label className={Styles.standard.label}>{field.label}</label> {/* Apply the style */}
+          <label className={Styles.standard.label}>{field.label}</label>
           {field.type === 'text' && <input type="text" placeholder={field.placeholder} className={Styles.standard.input} />} 
           {field.type === 'options' && (
             <select className={Styles.standard.input}>

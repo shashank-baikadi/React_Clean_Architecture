@@ -12,7 +12,7 @@ export function useLoanFormGet() {
       const mappedData = mapDataToLoanForm(result);
       setData(mappedData);
     };
-
+ 
     fetchData();
   }, []);
 

@@ -30,20 +30,48 @@ module.exports = {
     },
   };
 
-  ## shashnk
+  ## workflow :
+  step 1: cd React_Clean_Architecture
+  step 2: npm i
+  step 3: json-server --watch db.json --port 3001
 
-  {
-  "users": [
-    {
-      "id": "4500",
-      "name": "shashank",
-      "email": "baikadi.shashank@infokalash.com",
-      "phoneNumber": "8732199992"
-    },
-    {
-      "id": "f601",
-      "s": "vehicle",
-      "amount": "100"
-    }
-  ]
-}
+## Project Structure:
+
+├───public
+└───src
+    ├───api
+    ├───assets
+    ├───components
+    │   ├───generic_components       
+    │   │   └───Formfields
+    │   │       ├───checkbox
+    │   │       ├───date
+    │   │       ├───email
+    │   │       ├───file
+    │   │       ├───inputs
+    │   │       ├───modal
+    │   │       ├───number
+    │   │       ├───options
+    │   │       ├───password
+    │   │       ├───phone
+    │   │       ├───radio_button     
+    │   │       ├───text
+    │   │       ├───textarea
+    │   │       └───time
+    │   ├───registrationform
+    │   └───userform
+    ├───contexts
+    ├───layouts
+    ├───pages
+    │   ├───loan
+    │   └───loan_get
+    ├───redux
+    │   ├───actions
+    │   └───reducers
+    └───routes
+
+
+ ##   Code Flow
+
+
+ ![alt text](image.png)
